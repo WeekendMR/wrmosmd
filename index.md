@@ -83,7 +83,7 @@ public class main extends AppCompatActivity {
 }
 
 ```
-![Image](img/pscr3.png) ![Image](img/ph1.png)
+![Image](img/pscr3.png)
 
 ### Создание карты
 
