@@ -8,7 +8,7 @@
 
 Для начала работы нужно интегрировать необходимые библиотеки в проект. Делать это нужно в файле _build.gradle (Module: app)_
 
-```markdown
+```
     implementation 'org.osmdroid:osmdroid-android:6.1.1'
     implementation 'org.osmdroid:osmdroid-wms:6.1.1'
     implementation 'org.osmdroid:osmdroid-mapsforge:6.1.1'
@@ -20,7 +20,7 @@
 
 Для корректной работы приложения, ему нужны разрашения. В файле _AndroidManifest.xml_ прописываем следующее
 
-```markdown
+```xml
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"  />
@@ -32,7 +32,7 @@
 
 Начиная с android 6.0 приложению необходимо запрашивать у пользователя разрешения. Для этого нужно прописать следующий код в java файле главного activity.
 
-```markdown
+```java
 public class main extends AppCompatActivity {
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
     private MapView map = null;
@@ -89,7 +89,7 @@ public class main extends AppCompatActivity {
 
 Для создание карты в xml файле нужного activity пропишите следующее
 
-```markdow
+```xml
     <org.osmdroid.views.MapView
         android:id="@+id/map"
         android:layout_width="fill_parent"
@@ -105,7 +105,7 @@ public class main extends AppCompatActivity {
 
 Чтобы карты работали необходимо настроить её логику. Для этого в java файле нужного activity прописываем следующее
 
-```markdown
+```java
 public class main extends AppCompatActivity {
     private MapView map = null;
 
@@ -126,6 +126,9 @@ public class main extends AppCompatActivity {
         mapController.setCenter(startPoint);
     }
 ```
+![Image](img/pscr5.png)
+
+
 
 ### Markdown
 
