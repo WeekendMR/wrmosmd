@@ -128,7 +128,12 @@ public class main extends AppCompatActivity {
 ```
 ![Image](img/pscr5.png)
 
-
+> Не забудьте импортировать необходимые для работы билиотеки в java файл нужного экрана!
+> ```import org.osmdroid.api.IMapController;
+import org.osmdroid.config.Configuration;
+import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
+import org.osmdroid.util.GeoPoint;
+import org.osmdroid.views.MapView;```
 
 ### Markdown
 
