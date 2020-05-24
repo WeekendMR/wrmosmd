@@ -1,9 +1,19 @@
 ## Использование OpenStreetMap в проекте Android Studio
 
-You can use the [editor on GitHub](https://github.com/WeekendMR/wrmosmd/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+В этой статье мы рассмотрим использование OpenStreetMap на примере android приложения WeekendMR.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Вся информация была взята из откртых источников. 
 
+### Интеграция нужных библиотек
+
+Для начала работы нужно интегрировать необходимые библиотеки в проект. Делать это нужно в файле _build.gradle (Module: app)_
+
+```markdown
+    implementation 'org.osmdroid:osmdroid-android:6.1.1'
+    implementation 'org.osmdroid:osmdroid-wms:6.1.1'
+    implementation 'org.osmdroid:osmdroid-mapsforge:6.1.1'
+    implementation 'org.osmdroid:osmdroid-geopackage:5.6.4'
+```
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
