@@ -14,6 +14,7 @@
     implementation 'org.osmdroid:osmdroid-mapsforge:6.1.1'
     implementation 'org.osmdroid:osmdroid-geopackage:5.6.4'
 ```
+![Image](img/pscr1.png)
 
 ### Установка небходимых разрешений
 
