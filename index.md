@@ -99,7 +99,33 @@ public class main extends AppCompatActivity {
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 ```
+![Image](img/pscr4.png)
 
+### Логика карты
+
+Чтобы карты работали необходимо настроить её логику. Для этого в java файле нужного activity прописываем следующее
+
+```markdown
+public class main extends AppCompatActivity {
+    private MapView map = null;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+       
+        Configuration.getInstance().setUserAgentValue(BuildConfig.APPLICATION_ID);
+        MapView map = (MapView) findViewById(R.id.map);
+        map.setTileSource(TileSourceFactory.MAPNIK);
+        map.setBuiltInZoomControls(true);
+        map.setMultiTouchControls(true);
+
+        GeoPoint startPoint = new GeoPoint(48.13, -1.63);
+        IMapController mapController = map.getController();
+        mapController.setZoom(9);
+        mapController.setCenter(startPoint);
+    }
+```
 
 ### Markdown
 
