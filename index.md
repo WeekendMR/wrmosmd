@@ -82,6 +82,22 @@ public class main extends AppCompatActivity {
 
 ```
 
+### Создание карты
+
+Для создание карты в xml файле нужного activity пропишите следующее
+
+```markdow
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+```
+
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
